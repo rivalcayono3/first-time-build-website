@@ -1,0 +1,1 @@
+saya menggunakan JS hanya pada prangkat responsive-android saja (@media)

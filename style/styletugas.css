@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F2F1F8;
+}
+
+/* .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F2F1F8;
+    /* background-image: linear-gradient(#66BFBF, #EAF6F6); 
+} */
+
+header {
+    width: 100%;
+    align-items: center;
+    height: 80px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    padding: 15px;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+/* -------------------NAV------------------- */
+/* .isi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin: 5rem;
+} */
+
+.nav-toggle {
+    display: none;
+    margin: 1rem;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.nav-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -10px;
+    top: -5px;
+    cursor: pointer;
+}
+
+header .nav-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: green;
+}
+
+.firstname {
+    font-style: italic;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    color: #1F4690;
+    font-weight: bolder;
+}
+
+.lastname {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E8AA42;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.navigation{
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation > li{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    list-style-type: none;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navigation > li > a {
+    color: #002057;
+}
+.judul-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* -----------------------------HOME------------------------------- */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* margin-bottom: 50px; */
+    justify-content: center;
+    /* padding: 2rem 9%; */
+}
+
+.content .home h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #002057;
+    flex-basis: 50%;    
+    margin: 50px 1px 50px 75px;
+}
+
+.content .home h2 span {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #ff7b00;
+}
+
+.content .home p {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.content .home img {
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: #3330E4;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0px 5px 18px rgb(48 68 247 / 60%);
+    /* margin-top: 50px; */
+}
+
+/* --------------------------About------------------------ */
+.about {
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 18px rgba(255, 255, 255, 0.6);
+}
+.about section {
+    display: flex;
+    flex-direction: row;
+    margin: 2.5rem;
+    flex: 1 1 45rem;
+    padding: 3rem 8rem;
+}
+.about h2 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.about h2 span {
+    color: #4722ac;
+}
+
+.about section img {
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 2rem 2rem 2rem;
+    width: 25rem;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.about section .article h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #231955;
+    margin-bottom: 1rem;
+}
+
+.about section .article h1 figcaption {
+    font-size: 25px;
+    color: #000;
+}
+
+.about section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* ------------------------ASIDE-------------------------- */
+aside {
+    align-items: center;
+    text-align: center;
+}
+
+aside section table td {
+    font-weight: 700;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #231955;
+}
+
+.biodata {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+aside section table {
+    display: flex;
+    /* padding: 30px; */
+    flex-wrap: wrap;
+    border-spacing: 15px;
+    text-align: left;
+}
+
+aside img {
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 2rem 2rem 2rem;
+    width: 15rem;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+/* -----------------------FOOTER-------------------------- */
+
+footer {
+    width: 100%;
+    padding: 20px;
+    /* background-color: ; */
+    color: rgb(99, 99, 99);
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+@media screen and (max-width: 1230px) {
+    .about section p {
+        font-size: 1.5rem;
+    }
+    .about section {
+        padding: 0;
+    }
+    .content .home h2 {  
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .about section p {
+        font-size: 1rem;
+    }
+    .about section {
+        padding: 0;
+    }
+    .content .home h2 {  
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    /* --------NAV------ */
+    .navigation.slide {
+        transform: translateX(0);
+    }
+    header {
+        overflow-x: hidden;
+    }
+    .nav-toggle {
+        display: flex;
+        z-index: 1;
+        margin: 2rem;
+        margin-left: 0;
+        /* margin-right: 100rem; */
+    }
+    .navigation > li{
+        padding: 5px;
+    }
+    .navigation {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        right: 0;
+        justify-content: flex-start;
+        /* background-color: #000; */
+        z-index: 1;
+        transition: all 1s;
+        transform: translateX(110%);
+    }
+    /* --------HOME--------*/
+    .home a {
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 20px;
+    }    
+    .home {
+        margin-top: 35px;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    .content .home h2 {
+        flex-basis: 50%;    
+        margin: 0;
+        font-size: 2rem;
+    }
+    .content .home h2 span {
+        font-size: 2rem;
+    }
+    .content .home p {
+        font-size: 0.9rem;
+        /* padding: 1rem 0; */
+    }
+    .content .home img {
+        width: 150px;
+        height: 220px;
+    }
+    /* ------------ABOUT--------- */
+    .about h2 {
+        font-size: 2rem;
+    }
+    .about section {
+        /* padding-top: 0; */
+        justify-content: center;
+        font-size: 15px;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 2rem;
+    }
+    .about section img {
+        margin-top: 0;
+        width: 15rem;
+    }
+    .about section .article h1 {
+        font-weight: bolder;
+        font-size: 35px;
+        color: #231955;
+        margin-bottom: 1rem;
+    }
+    .about section .article h1 figcaption {
+        font-size: 25px;
+        color: #000;
+    }
+    .about section p {
+        font-size: 18px;
+    }
+    /* ---------------BOIDATA----------- */
+    aside h2 {
+        text-align: center;
+    }
+    aside {
+        align-items: center;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    aside section table td {
+        font-size: 13px;
+    }
+    .biodata {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    aside section table {
+        display: flex;
+        /* padding: 30px; */
+        flex-wrap: wrap;
+        border-spacing: 10px;
+    }
+    aside img {
+        margin: 0.5rem;
+        width: 10rem;
+    }
+}
